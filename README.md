@@ -97,5 +97,3 @@ API para gerenciamento de tickets de suporte técnico, desenvolvida com Node.js.
 ## Licença
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-```
-
