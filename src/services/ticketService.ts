@@ -14,7 +14,9 @@ export const create = (ticket: Ticket) => {
   return newTicket;
 };
 
-export const findAll = () => {};
+export const findAll = () => {
+  return dataBase;
+};
 
 export const findById = () => {};
 
