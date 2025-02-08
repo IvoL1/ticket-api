@@ -3,7 +3,7 @@ import { router } from './routes/ticketsRoutes';
 
 const app = express();
 
-const PORT = 3000;
+const PORT = 2000;
 
 app.use(express.json());
 

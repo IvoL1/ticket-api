@@ -7,3 +7,8 @@ export const ticketSchema = z.object({
 });
 
 export const statusSchema = z.enum(['close', 'open']);
+
+export const updateTicketSchema = z.object({
+  description: z.string().trim().min(2).optional(),
+  equipment: z.string().trim().min(3).optional(),
+});

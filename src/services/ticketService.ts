@@ -23,6 +23,24 @@ export const findAll = (status?: string) => {
 
 export const findById = () => {};
 
-export const update = () => {};
+export const update = (
+  id: string,
+  equipment?: string,
+  description?: string
+) => {
+  const ticket = dataBase.find((ticket) => ticket.id === id);
+
+  if (!ticket) {
+    return { error: 'Require ID for update ticket' };
+  }
+
+  if (equipment) {
+    ticket.equipment = equipment;
+  }
+  if (description) {
+    ticket.description = description;
+  }
+  return ticket;
+};
 
 export const remove = () => {};

@@ -14,6 +14,7 @@ export const validateTicketStatus = (
       res.status(400).json('Status inválido');
       return;
     }
+    next();
   }
   next();
 };
