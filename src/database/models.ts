@@ -3,5 +3,5 @@ export interface Ticket {
   equipment: string;
   description: string;
   user_name: string;
-  status: 'open' | 'close';
+  status: string;
 }

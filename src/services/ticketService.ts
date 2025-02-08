@@ -14,7 +14,10 @@ export const create = (ticket: Ticket) => {
   return newTicket;
 };
 
-export const findAll = () => {
+export const findAll = (status?: string) => {
+  if (status) {
+    return dataBase.filter((ticket) => ticket.status === status);
+  }
   return dataBase;
 };
 
