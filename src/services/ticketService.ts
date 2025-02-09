@@ -21,7 +21,13 @@ export const findAll = (status?: string) => {
   return dataBase;
 };
 
-export const findById = () => {};
+export const findById = (id: string) => {
+  const ticket = dataBase.find((item) => item.id === id);
+  if (!ticket) {
+    return false;
+  }
+  return ticket;
+};
 
 export const update = (
   id: string,

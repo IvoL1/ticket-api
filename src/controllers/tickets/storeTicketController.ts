@@ -3,5 +3,5 @@ import { create } from '../../services/ticketService';
 export const storeTickets = (req: Request, res: Response) => {
   const ticket = req.body;
   const result = create(ticket);
-  res.json(result);
+  res.status(201).json(result);
 };
