@@ -6,7 +6,7 @@ API para gerenciamento de tickets de suporte técnico, desenvolvida com Node.js.
 
 - **Criar Ticket**: Criação de novos tickets com informações sobre o equipamento, descrição e nome do usuário.
 - **Listar Tickets**: Obtenção de uma lista de todos os tickets criados.
-- **Filtrar Tickets**: Filtragem de tickets por status, equipamento, ou nome do usuário.
+- **Filtrar Tickets**: Filtragem de tickets por status.
 - **Atualizar Ticket**: Edição de informações, como equipamento e descrição, mantendo o nome do usuário fixo.
 - **Excluir Ticket**: Exclusão de tickets indesejados.
 - **Fechar Ticket**: Alteração do status do ticket para "Fechado".
@@ -37,11 +37,9 @@ API para gerenciamento de tickets de suporte técnico, desenvolvida com Node.js.
 
 ### 3. **Filtrar Tickets**
 - **Método**: `GET`
-- **Rota**: `/tickets/filter`
+- **Rota**: `/tickets/filter/:id`
 - **Parâmetros**:
-  - `status`: Status do ticket (ex: "aberto", "fechado")
-  - `equipment`: Equipamento do ticket
-  - `user`: Nome do usuário
+  - `status`: Status do ticket (ex: "open", "close")
 
 ### 4. **Atualizar Ticket**
 - **Método**: `PUT`
